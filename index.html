@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J Cofee</title>
+    <link href="style.css " type="text/css" rel="stylesheet">
+    </head>
+<body>
+    <section>   
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo" ><img src="logo.png"></a>
+            <div class="toggle"onclick="togglemenue();"></div>
+            <ul class="Nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="https://www.instagram.com/the_so_ul_hacker/">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's Not Just Coffe<br>It's   <span>JCofee</span> </h2>
+                <p> This cofee provide you many precious things in life.Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. The location where the coffee tree is grown plays a role in the quality of the final cup </p>
+             <a href="#">Learn more</a>
+        </div>
+            <div class="imgbox">
+                <img src="img1.png" class="jcoffe"> 
+            </div> 
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changecirclecolor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2_copy_400x580.png');changecirclecolor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changecirclecolor('#d752b1')"></li>
+        </ul>
+        <ul class="soc">
+            <li><a href="https://www.facebook.com/jishnu.jithin.18/"><img src="facebook.png"></a></li>
+            <li><a href="https://twitter.com/Jishnu66847359"><img src="twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/the_so_ul_hacker/"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.jcoffe').src = anything;
+        }
+        function changecirclecolor(color){
+            const circle= document.querySelector('.circle');
+            circle.style.background=color;
+        }
+        function togglemenue()
+        {
+            var menutoggle=document.querySelector('.toggle');
+            var Nav=document.querySelector('.Nav');
+            Nav.classList.toggle('active')
+            menutoggle.classList.toggle('active')
+        }
+        
+    </script>
+</body>
+</html>
