@@ -13,7 +13,7 @@ padding: 100px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background:#FFC300;
+background:#000000;
 }
 header
 {
@@ -75,7 +75,7 @@ header ul li a{
 }
 .content.textbox p
 {
-    color:#333;
+    color:#FFC300;
 
 }
 .content .textbox a{
